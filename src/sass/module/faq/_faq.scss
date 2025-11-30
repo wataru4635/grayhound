@@ -476,10 +476,10 @@
 .faq__flow-list {
   display: flex;
   align-items: center;
-  gap: rem(6);
-
+  gap: rem(5);
   @media (max-width: 767px) {
-    padding-left: rem(4);
+  justify-content: center;
+  flex-wrap: wrap;
   }
 
   @include mq('md') {
@@ -489,8 +489,8 @@
 
 .faq__flow-step-separator {
   display: inline-block;
-  width: rem(12);
-  height: rem(17);
+  width: rem(11);
+  height: rem(16);
   background: #000000;
   clip-path: polygon(0 0, 0 100%, 100% 50%);
   flex-shrink: 0;
@@ -508,7 +508,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: rem(76);
+  width: rem(75.5);
 
   @include mq('md') {
     border: 2px solid var(--main-blue);
