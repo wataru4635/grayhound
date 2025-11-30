@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.sub-mv {
+height: 146px;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+@include mq('md') {
+height: 260px;
+}
+}
+
+.sub-mv__title {
+  font-size: rem(18);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.12em;
+  @include mq('md') {
+    font-size: 32px;
+  }
+}
+

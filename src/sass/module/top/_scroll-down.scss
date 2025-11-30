@@ -1,0 +1,60 @@
+@use "global"as *;
+
+
+.scroll-down {
+  font-size: rem(10);
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  animation: scroll-down 1.6s ease-in-out infinite;
+
+  @include mq('md') {
+    padding-bottom: rem(20);
+  }
+
+  @media (min-width: 1440px) {
+  font-size: clamp(10px, calc(10px + 2 * var(--fluid-basis-2)), 12px);
+  }
+}
+
+.scroll-down:before {
+  content: "";
+  position: absolute;
+  bottom: -45px;
+ left: calc(50% + 2.5px);
+ translate: -50% 0;
+  width: 1px;
+  height: rem(8);
+  background: #fff;
+  transform: skewX(-31deg);
+  @include mq('md') {
+    height: rem(12);
+  }
+}
+
+.scroll-down:after{
+content:"";
+position: absolute;
+bottom: -45px;
+left: 50%;
+translate: -50% 0;
+width: 1px;
+height: rem(34.2);
+background:#fff;
+@include mq('md') {
+  height: rem(44);
+}
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

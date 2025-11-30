@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.privacy-policy {
+padding-block: rem(23) rem(44);
+@include mq('md') {
+padding-block: rem(92) rem(89);
+}
+}
+
+.privacy-policy__inner {
+margin-inline: auto;
+padding-inline: var(--inner-padding);
+max-width: 500px;
+@include mq('md') {
+max-width: calc(998px + var(--inner-padding) * 2);
+}
+}
+
+.privacy-policy__text {
+font-size: rem(10);
+font-weight: var(--font-weight-semibold);
+letter-spacing: 0.1em;
+line-height: 1.7;
+font-feature-settings: initial;
+@include mq('md') {
+font-size: rem(14);
+line-height: 1.77;
+}
+}
+
+.privacy-policy__heading {
+  font-size: rem(10);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.1em;
+  line-height: 1.7;
+  margin-top: rem(20);
+  font-feature-settings: initial;
+  @include mq('md') {
+  font-size: rem(14);
+  line-height: 1.77;
+  margin-top: rem(23);
+  }
+}
+
+.privacy-policy__text--address {
+margin-top: rem(20);
+@include mq('md') {
+margin-top: rem(27);
+}
+}
+
+.privacy-policy__heading.privacy-policy__heading--date {
+margin-top: rem(36);
+@include mq('md') {
+margin-top: rem(49);
+}
+}
+

@@ -1,0 +1,147 @@
+@use "global" as *;
+
+.footer {
+padding-block: rem(27) rem(30);
+@include mq('md') {
+padding-block: rem(16) rem(20);
+}
+}
+
+.footer__inner {
+padding-inline: 20px;
+@include mq('md') {
+padding-inline: rem(20);
+max-width: 1640px;
+margin-inline: auto;
+}
+@media (min-width: 1300px) {
+padding-inline: rem(50) rem(20);
+}
+}
+
+.footer__content {
+  @include mq('md') {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: rem(20);
+  }
+  @media (min-width: 1300px) {
+  flex-direction: row;
+  gap: rem(20);
+  padding-right:clamp(0px, calc(0px + 100 * var(--fluid-basis)), 100px);
+  }
+}
+
+.footer__brand {
+@include mq('md') {
+display: grid;
+grid-template-columns: rem(81) rem(339);
+align-items: center;
+gap: rem(20);
+}
+@include mq('xl') {
+  grid-template-columns: clamp(81px, calc(81px + 9 * var(--fluid-basis-2)), 90px) clamp(339px, calc(339px + 11 * var(--fluid-basis-2)), 350px);
+}
+}
+
+.footer__logo-img-wrap {
+@media (max-width: 767px) {
+margin-inline: auto;
+width: rem(81);
+}
+}
+
+.footer__logo-img {
+height: auto;
+object-fit: contain;
+}
+
+.footer__title-wrap {
+  @media (max-width: 767px) {
+  margin-top: rem(10);
+  max-width: rem(339);
+  margin-inline: auto;
+  }
+@include mq('md') {
+margin-top: rem(20);
+}
+}
+
+
+.footer__title-img {
+height: auto;
+object-fit: contain;
+}
+
+.footer__privacy {
+  font-size: rem(10);
+  font-weight: var(--font-weight-semibold);
+  display: none;
+@media (min-width: 1300px) {
+display: block;
+}
+@include mq('xl') {
+ font-size: clamp(10px, calc(10px + 1 * var(--fluid-basis-2)), 11px);
+}
+}
+
+.footer__info {
+display: flex;
+align-items: center;
+gap: rem(12);
+@media (max-width: 767px) {
+flex-direction: column;
+margin-top: rem(18);
+}
+@include mq('md') {
+gap: rem(40);
+}
+}
+
+
+.footer__info-text {
+font-size: rem(12);
+font-weight: var(--font-weight-semibold);
+text-align: center;
+@include mq('md') {
+font-size: rem(14);
+text-align: right;
+}
+@include mq('xl') {
+ font-size: clamp(14px, calc(14px + 1 * var(--fluid-basis-2)), 15px);
+}
+}
+
+.footer__sp-privacy {
+  font-size: rem(10);
+  font-weight: var(--font-weight-semibold);
+  text-align: center;
+  display: block;
+  @media (max-width: 767px) {
+  margin-top: rem(10);
+  }
+@include mq('md') {
+font-size: rem(12);
+}
+@media (min-width: 1300px) {
+display: none;
+}
+}
+
+.footer__copy {
+  display: block;
+  font-size: rem(10);
+  font-weight: var(--font-weight-normal);
+text-align: center;
+margin-top: rem(1);
+@include mq('md') {
+margin-top: rem(10);
+}
+@media (min-width: 1300px) {
+text-align: right;
+margin-top: 0;
+}
+}
+

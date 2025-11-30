@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: rem(11);
+  @include mq('md') {
+    gap: rem(20);
+  }
+}
+
+.pagination__prev,
+.pagination__next {
+  display: block;
+  width: rem(7);
+  border-radius: calc(infinity * 1px);
+  aspect-ratio: 1 / 1;
+  background-color: #666666;
+  transition: background-color var(--duration-base) ease;
+@include mq('md') {
+width: max(rem(14), 12px);
+}
+@media (any-hover: hover) {
+  &:hover {
+    background-color: var(--main-red);
+  }
+}
+}

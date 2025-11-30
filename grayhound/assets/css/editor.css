@@ -1,0 +1,79 @@
+.editor-styles-wrapper h2 {
+  margin-top: 10px;
+  font-size: 18px;
+  margin-bottom: 0;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  line-height: 1.9;
+}
+
+.editor-styles-wrapper h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  margin-bottom: 0;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  line-height: 1.9;
+}
+
+.editor-styles-wrapper h4 {
+  margin-top: 10px;
+  font-size: 14px;
+  margin-bottom: 0;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  line-height: 1.9;
+}
+
+.editor-styles-wrapper h5 {
+  margin-top: 10px;
+  font-size: 12px;
+  margin-bottom: 0;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  line-height: 1.9;
+}
+
+.editor-styles-wrapper p {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  line-height: 1.9;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.editor-styles-wrapper a {
+  text-decoration: underline currentColor;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  line-height: 1.9;
+}
+
+.editor-styles-wrapper ul {
+  padding-left: 21px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.editor-styles-wrapper ul li {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  line-height: 1.9;
+}
+
+.editor-styles-wrapper ol {
+  padding-left: 21px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.editor-styles-wrapper ol li {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  line-height: 1.9;
+}
+
