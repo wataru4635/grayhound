@@ -1,3 +1,5 @@
+/* リキッドレイアウト対応 */
+
 :root {
 	--font-family-base: "Noto Sans JP", sans-serif;
 	--font-family-second: "Noto Serif JP", serif;
@@ -58,8 +60,6 @@ body {
 .u-desktop {
 	display: none;
 }
-
-/* リキッドレイアウト対応 */
 
 html {
 	font-size: 16px;
@@ -175,7 +175,6 @@ textarea {
 
 input[type=checkbox],
 input[type=radio] {
-	-webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
 	border: 0;
 	clip-path: polygon(0 0, 0 0, 0 0, 0 0);
 	height: 1px;
@@ -380,6 +379,55 @@ button {
 	letter-spacing: 0.04em;
 	padding-left: 0.875rem;
 	text-indent: -0.875rem;
+}
+
+.entry__password-form {
+	margin-top: 2.5rem;
+	padding-bottom: 3.125rem;
+}
+
+.entry__password-message {
+	font-size: 0.875rem;
+	font-weight: var(--font-weight-normal);
+	letter-spacing: 0.05em;
+	line-height: 1.7;
+	margin-bottom: 1.875rem;
+}
+
+.entry__password-form-inner {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.25rem;
+}
+
+.entry__password-label {
+	font-size: 0.875rem;
+	font-weight: var(--font-weight-normal);
+	letter-spacing: 0.05em;
+	white-space: nowrap;
+}
+
+.entry__password-input {
+	background-color: var(--white);
+	border: 1px solid #666;
+	flex: 1;
+	font-size: 0.875rem;
+	letter-spacing: 0.05em;
+	min-width: 9.375rem;
+	padding: 0.5rem 0.75rem;
+}
+
+.entry__password-submit {
+	background-color: var(--main-blue);
+	border: none;
+	color: var(--white);
+	cursor: pointer;
+	font-size: 0.875rem;
+	font-weight: var(--font-weight-bold);
+	letter-spacing: 0.05em;
+	padding: 0.5625rem 1.5rem;
+	transition: opacity var(--duration-base) ease;
 }
 
 .faq {
@@ -636,7 +684,6 @@ button {
 }
 
 .faq__flow-step-separator {
-	-webkit-clip-path: polygon(0 0, 0 100%, 100% 50%);
 	background: #000000;
 	clip-path: polygon(0 0, 0 100%, 100% 50%);
 	display: inline-block;
@@ -1251,6 +1298,10 @@ button {
 	text-align: center;
 }
 
+.top-about__text.top-about__text--last {
+	margin-top: 0.9375rem;
+}
+
 .top-news {
 	padding-bottom: 1.8125rem;
 	padding-top: 2.1875rem;
@@ -1822,7 +1873,7 @@ button {
 .footer__info-text {
 	font-size: 0.75rem;
 	font-weight: var(--font-weight-semibold);
-	text-align: center;
+	text-align: right;
 }
 
 .footer__sp-privacy {
@@ -2190,6 +2241,10 @@ a:hover {
 	color: #6161ff;
 }
 
+.entry__password-submit:hover {
+	opacity: 0.8;
+}
+
 .faq__item-header:hover .faq__item-q-text {
 	color: var(--main-blue);
 }
@@ -2380,6 +2435,35 @@ html {
 	font-size: 0.875rem;
 	padding-left: 1rem;
 	text-indent: -1rem;
+}
+
+.entry__password-form {
+	margin-top: 3.125rem;
+	padding-bottom: 8.75rem;
+}
+
+.entry__password-message {
+	font-size: 1rem;
+	margin-bottom: 2.5rem;
+}
+
+.entry__password-form-inner {
+	gap: 1rem;
+}
+
+.entry__password-label {
+	font-size: 1rem;
+}
+
+.entry__password-input {
+	font-size: 1rem;
+	max-width: 15.625rem;
+	padding: 0.625rem 0.875rem;
+}
+
+.entry__password-submit {
+	font-size: 1rem;
+	padding: 0.625rem 2rem;
 }
 
 .faq {
@@ -2891,6 +2975,10 @@ html {
 	margin-top: 2.1875rem;
 }
 
+.top-about__text.top-about__text--last {
+	margin-top: 1.5625rem;
+}
+
 .top-news {
 	padding-bottom: 6.625rem;
 	padding-top: 7.5rem;
@@ -3154,7 +3242,6 @@ html {
 
 .footer__info-text {
 	font-size: 0.875rem;
-	text-align: right;
 }
 
 .footer__sp-privacy {
@@ -3487,9 +3574,9 @@ html {
 }
 
 .top-about-detail__item--04 .top-about-system__fee-box {
+	margin-right: 1.25rem;
 	margin-top: 0.625rem;
 	padding: 0.3125rem 0.625rem;
-	width: calc(100% - 1.25rem);
 }
 
 .top-about-detail__number {
@@ -3559,8 +3646,18 @@ html {
 	grid-area: info;
 }
 
+.top-school__address {
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
 .top-school__time {
 	border-radius: 15px;
+}
+
+.top-school__tel {
+	display: block;
+	text-align: right;
 }
 
 .footer__logo-img-wrap {

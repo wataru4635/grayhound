@@ -3,7 +3,11 @@
 
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
+  <?php if(is_page('entry')): ?>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <?php else: ?>
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <?php endif; ?>
   <meta name="format-detection" content="telephone=no" />
   <?php wp_head(); ?>
 </head>

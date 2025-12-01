@@ -154,7 +154,9 @@
         グレイハウンドはスタートしました。<br>
         当時の生徒は15名。<br>
         そしてその生徒達が大人になり、父や母となって、<br>
-        自分たちの子どもを通わせてくれるスクールとなりました。<br>
+        自分たちの子どもを通わせてくれるスクールとなりました。
+      </p>
+      <p class="top-about__text top-about__text--last js-fade-in">
         これからもキビしく、そして楽しいレッスンを。
       </p>
     </div>
@@ -209,7 +211,7 @@
               <p class="top-about-system__heading">★入学金と授業料</p>
               <div class="top-about-system__fee-box">
                 <p class="top-about-system__fee-text">入学金　21000円</p>
-                <p class="top-about-system__fee-text">授業料　9500円/月<br class="u-mobile">（週1回60分レッスン/年間48回）</p>
+                <p class="top-about-system__fee-text">授業料　9500円/月 （週1回60分レッスン/年間48回）</p>
               </div>
               <p class="top-about-system__note">
                 ※上記は基礎コースの授業料です。<br>
@@ -229,7 +231,7 @@
     </div>
   </section>
 
-  <section class="top-school">
+  <section class="top-school" id="school">
     <div class="top-school__inner">
       <div class="top-school__head js-fade-in">
         <div class="top-school__title-wrap">
@@ -257,7 +259,7 @@
                 <p class="top-school__campus-name">堺東校</p>
                 <p class="top-school__address">
                   〒590-0031 <br class="u-mobile">大阪府堺市堺区五月町4-24<br>
-                  <a href="tel:072-222-4677">TEL: 072-222-4677</a>
+                  <a href="tel:072-222-4677" class="top-school__tel">TEL: 072-222-4677</a>
                 </p>
               </div>
             </div>
@@ -279,7 +281,7 @@
                 <p class="top-school__campus-name">泉北校</p>
                 <p class="top-school__address">
                   〒590-0153 <br class="u-mobile">大阪府堺市南区大庭寺569-6<br>
-                  <a href="tel:072-299-9480">TEL: 072-299-9480</a>
+                  <a href="tel:072-299-9480" class="top-school__tel">TEL: 072-299-9480</a>
                 </p>
               </div>
             </div>

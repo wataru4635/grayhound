@@ -193,6 +193,9 @@ letter-spacing: 0.06em;
 .top-school__address {
   font-size: rem(12);
   font-weight: var(--font-weight-semibold);
+  @media (max-width: 767px) {
+  width: fit-content;
+  }
 @include mq('md') {
 text-align: right;
 font-size: rem(16);
@@ -218,5 +221,11 @@ margin-top: rem(15);
 }
 }
 
+.top-school__tel {
+@media (max-width: 767px) {
+text-align: right;
+display: block;
+}
+}
 
 

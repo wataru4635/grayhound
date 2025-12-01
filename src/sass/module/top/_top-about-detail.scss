@@ -144,7 +144,7 @@ padding-bottom: 0;
     & .top-about-system__fee-box {
       margin-top: rem(10);
       padding: rem(5) rem(10);
-      width: calc(100% - rem(20));
+      margin-right: rem(20);
     }
   }
 @include mq('md') {

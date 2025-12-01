@@ -13,6 +13,22 @@ Template Name: 説明会予約済みの方へ
     <h2 class="entry__title">説明会予約済みの方へ</h2>
 
     <?php
+    // パスワード保護のチェック
+    if ( post_password_required() ) :
+    ?>
+      <div class="entry__password-form">
+        <p class="entry__password-message">
+          このコンテンツはパスワードで保護されています。閲覧するには以下にパスワードを入力してください。
+        </p>
+        <form action="<?php echo esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ); ?>" method="post" class="entry__password-form-inner">
+          <label for="entry-password" class="entry__password-label">パスワード:</label>
+          <input type="password" name="post_password" id="entry-password" class="entry__password-input" required>
+          <button type="submit" class="entry__password-submit">確定</button>
+        </form>
+      </div>
+    <?php else : ?>
+
+    <?php
     function entry_preserve_br_sp($text) {
       if (empty($text)) return $text;
       $placeholder = "__BRSP__";
@@ -76,6 +92,7 @@ Template Name: 説明会予約済みの方へ
                 <?php endif; ?>
 
                 <?php if ( $school_map_url ) : ?>
+                  <br>
                   <a href="<?php echo esc_url( $school_map_url ); ?>"
                      class="entry__school-map"
                      target="_blank"
@@ -126,6 +143,7 @@ Template Name: 説明会予約済みの方へ
       <?php endif; ?>
 
     </div>
+    <?php endif; // パスワード保護の終了 ?>
   </div>
 </section>
 

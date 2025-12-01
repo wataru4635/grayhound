@@ -82,10 +82,7 @@ toTopButton.addEventListener('click', function () {
 # アニメーション
 // =============================================== */
 document.addEventListener('DOMContentLoaded', () => {
-  function observeElements(selector) {
-    let activeClass = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "is-active";
-    let options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-    let keepActive = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+  function observeElements(selector, activeClass = "is-active", options = {}, keepActive = false) {
     const elements = document.querySelectorAll(selector);
     function handleIntersect(entries, observer) {
       entries.forEach(entry => {
